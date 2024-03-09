@@ -1,2 +1,3 @@
-# Programming-Exercises
-Repositório para manter exercícios de programação em diversas linguagens
+# Programming Exercises
+
+Aqui eu mantenho exercícios diversos feitos em várias linguagens.
