@@ -1,0 +1,5 @@
+Mínimo: -1.0
+Máximo: 175.0
+Média: 30.1
+Mediana: 4.5
+Desvio Padrão: 56.41001684098313

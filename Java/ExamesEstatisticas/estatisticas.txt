@@ -1,0 +1,12 @@
+Grupo
+* Jovem: 3
+* Adulto: 2
+* Idoso: 2
+M1
+* Normal: 2
+* SDA: 3
+* ITC: 2
+M2
+* Normal: 3
+* Alterado: 3
+* Inconclusivo: 1

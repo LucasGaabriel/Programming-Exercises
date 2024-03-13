@@ -1,0 +1,3 @@
+Nome: Lucas
+Idade: 20
+Hobbie: Jogar

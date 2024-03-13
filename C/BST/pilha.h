@@ -1,0 +1,8 @@
+//
+// Created by Lucas Gabriel on 09/05/2022.
+//
+
+#ifndef ARVORE_BINARIA_DE_BUSCA_PILHA_H
+#define ARVORE_BINARIA_DE_BUSCA_PILHA_H
+
+#endif //ARVORE_BINARIA_DE_BUSCA_PILHA_H
