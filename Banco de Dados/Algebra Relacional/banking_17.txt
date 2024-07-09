@@ -1,0 +1,1 @@
+π branch_name, branch_city ( σ customer_name = 'Smith' (branch ⨝ loan ⨝ borrower) )

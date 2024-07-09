@@ -1,0 +1,2 @@
+ids = (π gpId (gps)) - ( π gpId (races ⨝ gps) )
+π name (gps ⨝ ids)

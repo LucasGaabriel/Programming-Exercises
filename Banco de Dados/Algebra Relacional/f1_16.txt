@@ -1,0 +1,3 @@
+ano_corridas = γ year; count(raceId) -> corridas (races)
+max = γ max(corridas) -> max (ano_corridas)
+π year -> Temporada, corridas -> Corridas (ano_corridas ⨝ corridas=max max)

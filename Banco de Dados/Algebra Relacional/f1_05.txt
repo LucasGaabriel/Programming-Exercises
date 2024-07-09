@@ -1,0 +1,2 @@
+p_nao_correram = (π driverId (drivers)) - (π driverId (drivers ⨝ results))
+π concat(forename, ' ', surname) -> fullname (drivers ⨝ p_nao_correram)

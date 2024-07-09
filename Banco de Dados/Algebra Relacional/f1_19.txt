@@ -1,0 +1,11 @@
+corridas_no_ano = γ year; count(raceId) -> corridas_ano (π raceId, year (results ⨝ races))
+
+driver_runned = γ driverId, year; count(raceId) -> corridas_do_piloto (results ⨝ races)
+
+correram_todas_corridas = π driverId, b.year ((ρ a (corridas_no_ano) ⨝ corridas_ano=corridas_do_piloto and a.year=b.year ρ b (driver_runned)))
+
+zerou_alguma = π driverId, year (σ points = 0 (results ⨝ races))
+
+result = correram_todas_corridas - zerou_alguma
+
+π concat(forename, ' ', surname) -> Piloto, year -> Ano (result ⨝ drivers)

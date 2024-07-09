@@ -1,0 +1,1 @@
+π loan_number (σ amount ≥ 750 and amount ≤ 1300 (loan))

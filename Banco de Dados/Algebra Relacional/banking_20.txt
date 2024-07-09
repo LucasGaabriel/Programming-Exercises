@@ -1,0 +1,2 @@
+north_town = π balance ( σ branch_name = 'North Town' (account) )
+π account_number ( σ account.balance < X.balance (rho X ( north_town ) x account) )

@@ -1,0 +1,4 @@
+piloto_ano = π driverId, year(races ⨝ results)
+pilotos_por_ano = γ year; count(driverId) -> pilotos (piloto_ano)
+media = γ avg(pilotos) -> MediaPilotos (pilotos_por_ano)
+π round(MediaPilotos) -> MediaPilotos (media)

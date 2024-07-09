@@ -1,0 +1,1 @@
+π account_number (σ balance ≥ 700 and balance ≤ 900 (account))

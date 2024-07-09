@@ -1,0 +1,1 @@
+π customer_name (σ branches > 1 (γ customer_name; count(branch_name) -> branches (borrower ⨝ loan)))

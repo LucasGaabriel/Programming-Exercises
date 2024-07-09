@@ -1,0 +1,4 @@
+equipes_corridas = γ constructorId; count(driverId) -> Corridas (races ⨝ results)
+minimo = γ min(Corridas) -> Min (equipes_corridas)
+min_equipes_corridas = π constructorId, Corridas (equipes_corridas ⨝ Corridas=Min minimo)
+π name -> Equipe, Corridas -> Aparicoes (min_equipes_corridas ⨝ constructors)

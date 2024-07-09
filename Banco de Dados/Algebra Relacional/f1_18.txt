@@ -1,0 +1,7 @@
+pontuacao_anual = γ constructorId, year; sum(points) -> pontuacao (results ⨝ races)
+
+max_ano = γ year; max(pontuacao) -> max (pontuacao_anual)
+
+melhores_equipes = pontuacao_anual ⨝ pontuacao=max and races.year=max_ano.year ρ max_ano (max_ano)
+
+π name -> Equipe (constructors ⨝ (σ vezes_melhor ≥ 2 (γ constructorId; count(*) -> vezes_melhor (melhores_equipes))))

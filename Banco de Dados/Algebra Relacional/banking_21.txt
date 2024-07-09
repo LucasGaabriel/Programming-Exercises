@@ -1,0 +1,2 @@
+downtown = π amount ( σ branch_name = 'Downtown' (loan) )
+π loan_number ( σ loan.amount ≤ X.amount (rho X ( downtown ) x loan) )

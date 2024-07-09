@@ -1,0 +1,4 @@
+equipes_ano = π constructorId, year(races ⨝ results)
+equipes_por_ano = γ year; count(constructorId) -> equipes (equipes_ano)
+media = γ avg(equipes) -> MediaEquipes (equipes_por_ano)
+π round(MediaEquipes) -> MediaEquipes (media)

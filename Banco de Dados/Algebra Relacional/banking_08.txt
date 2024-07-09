@@ -1,0 +1,1 @@
+π customer_name ( σ customer_city LIKE 'P%' or customer_name LIKE '%o%' (customer) )

@@ -1,0 +1,2 @@
+t1 = γ avg(corridas_no_ano ) -> MediaCorridas (γ year; count(raceId) -> corridas_no_ano (races))
+π round(MediaCorridas) -> MediaCorridas (t1)

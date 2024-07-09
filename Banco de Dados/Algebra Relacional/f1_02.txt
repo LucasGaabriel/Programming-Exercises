@@ -1,0 +1,3 @@
+equipes = π nationality (constructors)
+pilotos = π nationality (π driverId (σ positionOrder <= 3 (results)) ⨝ drivers )
+pilotos - equipes

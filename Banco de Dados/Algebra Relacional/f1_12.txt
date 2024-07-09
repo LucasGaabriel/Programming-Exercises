@@ -1,0 +1,4 @@
+corridas_por_piloto = γ driverId; count(raceId) -> Corridas (races ⨝ results)
+piloto_aparicoes = π concat(forename, ' ', surname) -> Piloto, Corridas -> Aparicoes (corridas_por_piloto ⨝ drivers)
+max = γ max(Aparicoes) -> Max (piloto_aparicoes)
+π Piloto, Aparicoes (piloto_aparicoes ⨝ Max=Aparicoes max)

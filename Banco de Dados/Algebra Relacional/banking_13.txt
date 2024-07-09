@@ -1,0 +1,1 @@
+π customer_name, customer_city ( σ branch_name = 'Perryridge' (customer ⨝ depositor ⨝ account ⨝ branch) )

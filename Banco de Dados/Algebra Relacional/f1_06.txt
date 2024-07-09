@@ -1,0 +1,3 @@
+melhores_equipes = π constructorId (σ positionOrder <= 3 (results))
+piores_equipes = π constructorId (constructors) - melhores_equipes
+π name (piores_equipes ⨝ constructors)

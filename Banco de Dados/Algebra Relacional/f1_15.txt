@@ -1,0 +1,3 @@
+max = γ max(corridas) -> max (γ gpId; count(raceId) -> corridas (gps ⨝ races))
+best_gps = max ⨝ (γ gpId; count(raceId) -> max (races))
+π name -> GP, max -> Ocorrencias (best_gps ⨝ gps)

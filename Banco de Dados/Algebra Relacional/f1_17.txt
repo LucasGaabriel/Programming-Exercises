@@ -1,0 +1,5 @@
+ano_piloto_pontos = γ year, driverId; sum(points)-> pontuacao (results ⨝ races)
+max_pontos_ano = γ year; max(pontuacao) -> pontuacao (ano_piloto_pontos)
+titulos = γ driverId; count(*) -> Titulos (ano_piloto_pontos ⨝ max_pontos_ano)
+pilotos_tetra = σ Titulos >= 4 (titulos)
+π concat(forename, ' ', surname) -> Piloto (pilotos_tetra ⨝ drivers)

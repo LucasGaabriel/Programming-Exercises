@@ -1,0 +1,2 @@
+branches = π branch_name (σ customer_name = 'Hayes' (loan ⨝ borrower))
+π customer_name (σ customer_name != 'Hayes' (loan ⨝ borrower ⨝ branches) )

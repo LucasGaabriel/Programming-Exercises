@@ -1,0 +1,2 @@
+ids = (π circuitId (circuits)) - ( π circuitId (circuits ⨝ races) )
+π name (circuits ⨝ ids)

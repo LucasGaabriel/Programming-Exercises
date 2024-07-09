@@ -1,0 +1,4 @@
+ganhadores = σ positionOrder = 1 (results)
+eq_francesas = σ nationality = 'French' (constructors)
+t2 = eq_francesas ⟕ constructors.constructorId = results.constructorId (ganhadores ⨝ races ⨝ circuits ⨝ drivers)
+π constructors.name -> Equipe, concat(forename, ' ', surname)->Piloto, circuits.name -> Circuito, year -> Ano (t2)

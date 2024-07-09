@@ -1,0 +1,1 @@
+π branch_name ( σ branch.assets > brooklyn.assets ( branch ⨯ ρ brooklyn ( π assets ( σ branch_city = 'Brooklyn' ( branch ) ) ) ) )

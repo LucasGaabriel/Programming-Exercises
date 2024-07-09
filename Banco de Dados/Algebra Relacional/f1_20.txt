@@ -1,0 +1,6 @@
+corridas_por_ano = γ year; count(raceId) -> corridas_no_ano (π raceId, year (results ⨝ races))
+equipes_correram_qtd = γ constructorId, year; count(raceId) -> corridas_da_equipe (π constructorId, year, raceId (results ⨝ races))
+correram_todas_corridas = π constructorId, a.year ((ρ a (corridas_por_ano) ⨝ a.corridas_no_ano=b.corridas_da_equipe and a.year=b.year ρ b (equipes_correram_qtd)))
+pontuou_alguma = π constructorId, year (σ points > 0 (results ⨝ races))
+result = correram_todas_corridas - pontuou_alguma
+π name -> Equipe, year -> Ano (result ⨝ constructors)

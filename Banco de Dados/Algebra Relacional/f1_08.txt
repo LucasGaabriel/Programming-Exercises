@@ -1,0 +1,3 @@
+t1 = γ circuitId; count(*) -> corridas (races)
+t2 = γ driverId, circuitId; count(*) -> corridas (results ⨝ races)
+π concat(forename, ' ', surname) -> Piloto, name -> Circuito (t1 ⨝ t2 ⨝ drivers ⨝ circuits)
