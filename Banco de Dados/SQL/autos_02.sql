@@ -1,0 +1,2 @@
+SELECT DISTINCT fabricante
+FROM automoveis
