@@ -1,15 +1,40 @@
 ﻿@page "/todo"
 @rendermode InteractiveServer
 
-<h3>Todo</h3>
+<PageTitle>To Do List</PageTitle>
+
+<h3>To Do List</h3>
+<p>@todos.Count(todo => !todo.IsDone) Pending Tasks</p>
+
+<ul>
+    @foreach (var todo in todos)
+    {
+        <li>
+            <input @bind="todo.Title" />
+            <button @onclick="() => RemoveTodo(todo)">Remove</button>
+            <input type="checkbox" @bind="todo.IsDone" />
+        </li>
+    }
+</ul>
+
+<input @bind="newTodo" />
+<button @onclick="AddTodo">Add todo</button>
 
 @code {
     private List<TodoItem> todos = new();
+    string newTodo = "";
 
-    @* <ul>
-        @foreach (var todo in todos)
+    void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTodo))
         {
-            <li>@todo.Title</li>
+            todos.Add(new TodoItem { Title = newTodo });
+            newTodo = string.Empty;
         }
-    </ul> *@
+    }
+
+    void RemoveTodo(TodoItem item)
+    {
+        todos.Remove(item);
+    }
 }
