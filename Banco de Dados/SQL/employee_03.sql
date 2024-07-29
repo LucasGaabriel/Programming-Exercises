@@ -1,0 +1,6 @@
+WITH t1 AS (
+    SELECT *, CAST( REPLACE( CAST(SALARY AS CHAR), '0', '' ) AS UNSIGNED ) AS SALARY_WITHOUT_0
+    FROM Employee
+)
+SELECT ceiling( avg(salary) - avg(SALARY_WITHOUT_0) ) AS QTDE_ERRO
+FROM t1

@@ -1,0 +1,3 @@
+SELECT sum(POPULATION) / count(*)
+FROM CITY
+WHERE DISTRICT = 'California'
