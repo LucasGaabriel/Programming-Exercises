@@ -1,0 +1,32 @@
+body {
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+#title, #btn {
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px 40px;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 30px;
+    background-color: rgb(41, 40, 40);
+    border: 2px solid black;
+    color: white;
+}
+
+#color {
+    color: lightblue;
+}
+
+#btn {
+    font-size: 20px;
+    border-radius: 10px;
+}
