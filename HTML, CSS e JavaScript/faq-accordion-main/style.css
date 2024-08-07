@@ -3,17 +3,22 @@
     --light-pink: hsl(275, 100%, 97%);
     --grayish-purple: hsl(292, 16%, 49%);
     --dark-purple: hsl(292, 42%, 14%);
+    --purple: #ac44c9;
 }
 
+@font-face {
+    font-family: WorkSans;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+  }
+
 body {
+    font-family: WorkSans;
     margin: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 30%), 
-                        url('assets/images/background-pattern-desktop.svg') 
 }
 
 #card {
@@ -21,16 +26,62 @@ body {
     width: 40%;
     background-color: var(--white);
     border: solid 2px black;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
+#title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 30px;
+}
 
+#title > img {
+    margin: 0 20px 0 0;
+}
 
+.question, .description {
+    margin: 30px;
+}
 
+.question {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    font-weight: bold;
+    vertical-align: middle;
+    align-items: center;
+}
 
+.question > img {
+    height: 32px;
+}
+
+.question:hover {
+    color: var(--purple);
+    cursor: pointer;
+}
+
+.description {
+    text-align: justify;
+}
+
+.activated {
+    display: block;
+}
+
+.deactivated {
+    display: none;
+}
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 10px;
 }
 
 .attribution a {
