@@ -9,9 +9,20 @@ function disableAllDescriptions() {
 
 function disableAllDescriptionsExcept(d) {
     descriptions.forEach((description) => {
-        if (description !== d)
+        if (description !== d) {
+            const icon = description.previousElementSibling.children[0];
+            description.classList.remove('activated');
             description.classList.add('deactivated');
+            icon.src = 'assets/images/icon-plus.svg';
+        }
     });
+}
+
+function toggleIcon(question) {
+    const icon = question.children[0]
+    let attr = icon.getAttribute('src');
+    attr = attr == 'assets/images/icon-plus.svg' ? 'assets/images/icon-minus.svg' : 'assets/images/icon-plus.svg';
+    icon.src = attr
 }
 
 function showDescriptionAndDisableOthers(e) {
@@ -19,6 +30,7 @@ function showDescriptionAndDisableOthers(e) {
     const description = question.nextElementSibling;
 
     disableAllDescriptionsExcept(description);
+    toggleIcon(question);
 
     description.classList.toggle('activated');
     description.classList.toggle('deactivated');
