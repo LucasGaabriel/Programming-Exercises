@@ -1,32 +1,33 @@
 * {
+    font-family: 'Lexend', monospace;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lexend', monospace;
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(34,223,242,1) 0%, rgba(0,168,255,1) 100%);
+    background: linear-gradient(180deg, rgba(34, 223, 242, 1) 0%, rgba(0, 168, 255, 1) 100%);
 }
 
 #main {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; */
+    justify-content: space-between;
     background-color: white;
     height: 80%;
     width: 35%;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    min-height: 500px;
+    min-width: 500px;
 }
 
 #title {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -50,25 +51,42 @@ body {
     margin-left: 10px;
 }
 
+#todo-list {
+    margin: 20px 5px;
+}
+
 #list {
     list-style: none;
     padding: 0;
 }
 
-
-#check {
-    padding: 100px;
-}
-
-
-
-li {
+.todo {
     display: flex;
     justify-content: space-between;
-    margin: 0;
-    border: 3px solid black;
+    align-items: center;
+    margin: 10px 25px;
 }
 
-#details {
+.todo > label {
+    vertical-align: middle;
+}
+
+.btn-delete {
+    padding: 10px 20px;
+}
+
+#bottom {
     display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+#pending {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+div {
+    border: 2px black solid;
 }
