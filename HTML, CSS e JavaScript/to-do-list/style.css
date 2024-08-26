@@ -24,6 +24,7 @@ body {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     min-height: 500px;
     min-width: 500px;
+    overflow: auto;
 }
 
 #title {
@@ -34,21 +35,11 @@ body {
 #new-todo {
     display: flex;
     margin: 0 25px;
-    justify-content: space-between;
 }
 
 #input {
     width: 100%;
     align-items: center;
-}
-
-#input::placeholder {
-    text-align: center;
-}
-
-#btn-add {
-    padding: 15px 20px;
-    margin-left: 10px;
 }
 
 #todo-list {
@@ -64,15 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 25px;
-}
-
-.todo > label {
-    vertical-align: middle;
-}
-
-.btn-delete {
-    padding: 10px 20px;
+    margin: 10px 20px;
 }
 
 #bottom {
@@ -87,6 +70,6 @@ body {
     padding: 10px 15px;
 }
 
-div {
-    border: 2px black solid;
+.btn {
+    margin-left: 10px;
 }
