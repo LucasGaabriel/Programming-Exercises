@@ -1,0 +1,6 @@
+Codigo fornecido: vix
+100 sdu azul 3 223.67
+232 gru latam 1 287.10
+550 bsb gol 2 306.80
+222 poa latam 1 422.18
+Melhor voo: numero 232 com 1 conexao.
