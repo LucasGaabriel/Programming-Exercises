@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Lilita One';
+  src: url("../fonts/LilitaOne-Regular.ttf");
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #232526, #414345);
+  font-family: 'Lilita One';
+}
+
+.title, .counter {
+  color: white;
+  font-size: 3rem
+}
+
+.counter {
+  padding: 20px 0px;
+}
+
+.btn {
+  padding: 10px 30px;
+}
+
+* {
+  margin: 0;
+}
