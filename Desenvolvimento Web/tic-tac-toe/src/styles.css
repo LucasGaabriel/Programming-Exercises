@@ -1,11 +1,19 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(../fonts/RobotoMono-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
-    margin: 20px;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto Mono';
 }
 
 h1 {
@@ -46,14 +54,14 @@ ul {
     padding-inline-start: 20px;
 }
 
-* {
-    box-sizing: border-box;
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 20px;
-    padding: 0;
+* {
+    box-sizing: border-box;
 }
 
 .square {
@@ -87,5 +95,5 @@ body {
 }
 
 .game-info {
-    margin-left: 20px;
+    margin-left: 50px;
 }
